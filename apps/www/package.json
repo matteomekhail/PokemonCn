@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "opennextjs-cloudflare build",
+    "build": "next build",
+    "build:worker": "opennextjs-cloudflare build",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "registry:build": "shadcn build",
-    "preview": "pnpm registry:build && opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "pnpm registry:build && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview": "pnpm registry:build && pnpm build && pnpm build:worker && opennextjs-cloudflare preview",
+    "deploy": "pnpm registry:build && pnpm build && pnpm build:worker && opennextjs-cloudflare deploy",
     "cf-typegen": "wrangler types --env-interface CloudflareEnv ./cloudflare-env.d.ts",
     "clean": "rm -rf .next .open-next .turbo public/r"
   },

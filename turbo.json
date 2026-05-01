@@ -5,7 +5,11 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build", "registry:build"],
-      "outputs": [".next/**", "!.next/cache/**", ".open-next/**", "dist/**"]
+      "outputs": [".next/**", "!.next/cache/**", "dist/**"]
+    },
+    "build:worker": {
+      "dependsOn": ["build"],
+      "outputs": [".open-next/**"]
     },
     "registry:build": {
       "outputs": ["public/r/**"],
