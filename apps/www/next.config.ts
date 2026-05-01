@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     root: workspaceRoot,
   },
   // Registry JSON is served from /r/* — keep it as static asset and add CORS so
-  // `pnpm dlx shadcn add https://pokemoncn.com/r/<name>.json` works from anywhere.
+  // `pnpm dlx shadcn add https://pokemoncn.dev/r/<name>.json` works from anywhere.
   async headers() {
     return [
       {

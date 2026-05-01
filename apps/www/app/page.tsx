@@ -3,7 +3,7 @@ import { CopyableCommand } from "@/components/copyable-command"
 import { Pokeball } from "@/components/pokeball"
 import { SiteFooter } from "@/components/site-footer"
 
-const INSTALL = "pnpm dlx shadcn@latest add https://pokemoncn.com/r/area-banner.json"
+const INSTALL = "pnpm dlx shadcn@latest add https://pokemoncn.dev/r/area-banner.json"
 
 export default function Page() {
   return (

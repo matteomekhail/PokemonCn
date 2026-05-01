@@ -1,12 +1,12 @@
 # PokemonCn
 
 Pokémon-themed component registry built in the spirit of [shadcn/ui](https://ui.shadcn.com).
-Components are served as JSON at `https://pokemoncn.com/r/<name>.json` and consumed by the
+Components are served as JSON at `https://pokemoncn.dev/r/<name>.json` and consumed by the
 **standard** `shadcn` CLI — no fork required.
 
 ```bash
-pnpm dlx shadcn@latest add https://pokemoncn.com/r/area-banner.json
-pnpm dlx shadcn@latest add https://pokemoncn.com/r/poke-ball.json
+pnpm dlx shadcn@latest add https://pokemoncn.dev/r/area-banner.json
+pnpm dlx shadcn@latest add https://pokemoncn.dev/r/poke-ball.json
 ```
 
 There is also an optional convenience wrapper:

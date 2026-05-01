@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "description": "Pokemon-themed component registry, in the spirit of shadcn/ui.",
-  "homepage": "https://pokemoncn.com",
+  "homepage": "https://pokemoncn.dev",
   "packageManager": "pnpm@9.12.3",
   "engines": {
     "node": ">=20"

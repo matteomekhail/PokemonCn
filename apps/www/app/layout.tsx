@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description:
     "A Pokémon-themed component registry built on Radix and Tailwind. Install with the standard shadcn CLI.",
-  metadataBase: new URL("https://pokemoncn.com"),
+  metadataBase: new URL("https://pokemoncn.dev"),
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

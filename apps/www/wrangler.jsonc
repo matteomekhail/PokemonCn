@@ -18,7 +18,7 @@
     }
   ],
   // Custom domain — wire up in Cloudflare dashboard under Workers > pokemoncn > Domains.
-  // "routes": [{ "pattern": "pokemoncn.com", "custom_domain": true }],
+  // "routes": [{ "pattern": "pokemoncn.dev", "custom_domain": true }],
   "vars": {
     "NEXT_INC_CACHE_R2_PREFIX": "incremental-cache"
   }

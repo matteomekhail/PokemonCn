@@ -14,7 +14,7 @@ export type ComponentMeta = {
   usage: string
 }
 
-const REGISTRY_ORIGIN = "https://pokemoncn.com/r"
+const REGISTRY_ORIGIN = "https://pokemoncn.dev/r"
 
 export const COMPONENTS: ComponentMeta[] = [
   {

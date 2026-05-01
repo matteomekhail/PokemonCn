@@ -1,7 +1,7 @@
 {
   "name": "pokemoncn",
   "version": "0.0.1",
-  "description": "PokemonCn CLI — thin wrapper around `shadcn` that points at https://pokemoncn.com.",
+  "description": "PokemonCn CLI — thin wrapper around `shadcn` that points at https://pokemoncn.dev.",
   "license": "MIT",
   "type": "module",
   "bin": {

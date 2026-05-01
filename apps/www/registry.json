@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "pokemoncn",
-  "homepage": "https://pokemoncn.com",
+  "homepage": "https://pokemoncn.dev",
   "items": [
     {
       "name": "utils",

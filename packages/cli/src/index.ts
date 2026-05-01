@@ -1,14 +1,14 @@
 /**
  * `pokemoncn` — convenience wrapper around `shadcn` that defaults the registry URL
- * to https://pokemoncn.com. Users who'd rather use the upstream CLI can simply run
+ * to https://pokemoncn.dev. Users who'd rather use the upstream CLI can simply run
  *
- *   pnpm dlx shadcn@latest add https://pokemoncn.com/r/<name>.json
+ *   pnpm dlx shadcn@latest add https://pokemoncn.dev/r/<name>.json
  *
  * — this binary just spares the typing.
  */
 import { execa } from "execa"
 
-const REGISTRY = process.env.POKEMONCN_REGISTRY ?? "https://pokemoncn.com"
+const REGISTRY = process.env.POKEMONCN_REGISTRY ?? "https://pokemoncn.dev"
 
 async function main() {
   const [command, ...rest] = process.argv.slice(2)
