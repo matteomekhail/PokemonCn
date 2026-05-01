@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# External reference clones (e.g. pret/pokeheartgold)
+.refs/
+
+# Extraction script scratch output (PNG dumps from scripts/*.py)
+scripts/_*/
+
+# Build output
+dist/
+build/
+out/
+.next/
+.open-next/
+.turbo/
+.wrangler/
+
+# Registry build output (generated from registry.json)
+apps/www/public/r/
+
+# Env
+.env
+.env*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.tsbuildinfo
+next-env.d.ts

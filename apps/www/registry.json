@@ -1,0 +1,131 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "pokemoncn",
+  "homepage": "https://pokemoncn.com",
+  "items": [
+    {
+      "name": "utils",
+      "type": "registry:lib",
+      "title": "cn helper",
+      "description": "Tailwind class merge helper used by every PokemonCn component.",
+      "files": [
+        { "path": "registry/lib/utils.ts", "type": "registry:lib", "target": "lib/utils.ts" }
+      ]
+    },
+    {
+      "name": "area-banner",
+      "type": "registry:ui",
+      "title": "Area Banner",
+      "description": "The HG/SS area-name placard. Wooden plank for towns, leaves+berry for Ilex, stone for caves, water for sea — composed exactly like draw_map_name.c does it. RLE-compressed pixel rectangles rendered as inline SVG, zero asset dependencies, scales to any size with crispEdges.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/area-banner.tsx", "type": "registry:ui", "target": "components/ui/area-banner.tsx" },
+        { "path": "registry/ui/area-banner-data.ts", "type": "registry:ui", "target": "components/ui/area-banner-data.ts" }
+      ]
+    },
+    {
+      "name": "type-badge",
+      "type": "registry:ui",
+      "title": "Type Badge",
+      "description": "The HG/SS move-type chip (FIRE, WATER, GRASS…). Pixel-perfect, decoded from the LZ77-compressed sprite NARC at files/a/0/0/8 against the master battle palette. 18 standard types. Single-file inline-SVG component — rect data lives next to the JSX, no separate data file, no asset deps.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/type-badge.tsx", "type": "registry:ui", "target": "components/ui/type-badge.tsx" }
+      ]
+    },
+    {
+      "name": "hp-bar",
+      "type": "registry:ui",
+      "title": "HP Bar",
+      "description": "The HG/SS battle HP gauge. Chamfered pill, ink frame, 2-tone fill that auto-tiers green / yellow / red on value/max ratio. Colours lifted from the actual HP-bar palette (member 0x47 of files/a/0/0/8). Inline SVG, scales to any size, label is your child.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/hp-bar.tsx", "type": "registry:ui", "target": "components/ui/hp-bar.tsx" }
+      ]
+    },
+    {
+      "name": "xp-bar",
+      "type": "registry:ui",
+      "title": "XP Bar",
+      "description": "The HG/SS experience strip. Half-height variant of HpBar with the iconic XP blue (palette 0x47, indices 11/12). Inline SVG, scalable, label as children.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/xp-bar.tsx", "type": "registry:ui", "target": "components/ui/xp-bar.tsx" }
+      ]
+    },
+    {
+      "name": "dialogue-box",
+      "type": "registry:ui",
+      "title": "Dialogue Box",
+      "description": "The HG/SS speech window — 20 frame styles the player can pick under Options → Frame. Colours sampled from files/a/0/3/8 (NCGR 2..21 + NCLR 26..45). 2px border, 1px inner accent stripe, hard offset shadow, optional ▼ continue cursor. Children are yours.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/dialogue-box.tsx", "type": "registry:ui", "target": "components/ui/dialogue-box.tsx" }
+      ]
+    },
+    {
+      "name": "menu-list",
+      "type": "registry:ui",
+      "title": "Menu List",
+      "description": "Sprite-era selection list — pause menu, battle menu, anywhere a Pokémon game shows a stack of options with a ▶ cursor on the active row. Composable with <MenuItem>, full keyboard nav (↑/↓, Home/End, Enter/Space), hover and focus stay in sync with the cursor.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/menu-list.tsx", "type": "registry:ui", "target": "components/ui/menu-list.tsx" }
+      ]
+    },
+    {
+      "name": "status-badge",
+      "type": "registry:ui",
+      "title": "Status Badge",
+      "description": "The 24×8 battle status chip — PAR / FRZ / SLP / PSN / BRN. Pixel data and palette lifted from pret/pokeheartgold (battle_hp_bar_data.h tiles 0x29..0x37, palette files/a/0/0/8 member 71). Inline SVG, scales to any size, the 3-letter glyph is part of the sprite.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/status-badge.tsx", "type": "registry:ui", "target": "components/ui/status-badge.tsx" },
+        { "path": "registry/ui/status-badge-data.ts", "type": "registry:ui", "target": "components/ui/status-badge-data.ts" }
+      ]
+    },
+    {
+      "name": "poke-ball",
+      "type": "registry:ui",
+      "title": "Poké Ball",
+      "description": "Every Poké Ball icon HG/SS ships with — the 16 standard balls plus the Apricorn family (Fast/Level/Lure/Heavy/Love/Friend/Moon/Sport) and Park Ball. 25 variants total, each decoded from its own NCGR + NCLR pair under files/itemtool/itemdata/item_icon. Inline SVG, RLE-compressed rect data, no asset deps.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/poke-ball.tsx", "type": "registry:ui", "target": "components/ui/poke-ball.tsx" },
+        { "path": "registry/ui/poke-ball-data.ts", "type": "registry:ui", "target": "components/ui/poke-ball-data.ts" }
+      ]
+    },
+    {
+      "name": "apricorn",
+      "type": "registry:ui",
+      "title": "Apricorn",
+      "description": "The seven HG/SS Apricorn fruit icons — red, yellow, blue, green, pink, white, black — that Kurt at Azalea Town forges into the eight Apricorn balls. Each variant decoded from its own NCGR + NCLR pair under files/itemtool/itemdata/item_icon (item IDs 485–491). Inline SVG, RLE-compressed rect data, no asset deps.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/apricorn.tsx", "type": "registry:ui", "target": "components/ui/apricorn.tsx" },
+        { "path": "registry/ui/apricorn-data.ts", "type": "registry:ui", "target": "components/ui/apricorn-data.ts" }
+      ]
+    },
+    {
+      "name": "stat-hexagon",
+      "type": "registry:ui",
+      "title": "Stat Hexagon",
+      "description": "The Gen 5 (B/W) summary-screen radar — six axes for HP/Atk/Def/SpA/SpD/Spe with HP at 12 o'clock, gold polygon over a cool grid. Pure SVG, scales to any size, override fill/stroke for theming, no asset deps.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/stat-hexagon.tsx", "type": "registry:ui", "target": "components/ui/stat-hexagon.tsx" }
+      ]
+    },
+    {
+      "name": "gym-badge",
+      "type": "registry:ui",
+      "title": "Gym Badge",
+      "description": "All 16 Johto + Kanto gym badges, decoded from files/a/0/4/9 (the Trainer Card NARC). Two display states via the `lit` prop: unlit silver-cream silhouette, or lit in the badge's canonical hue. RLE-compressed inline-SVG, no asset deps.",
+      "registryDependencies": ["utils"],
+      "files": [
+        { "path": "registry/ui/gym-badge.tsx", "type": "registry:ui", "target": "components/ui/gym-badge.tsx" },
+        { "path": "registry/ui/gym-badge-data.ts", "type": "registry:ui", "target": "components/ui/gym-badge-data.ts" }
+      ]
+    }
+  ]
+}
